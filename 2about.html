@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Парк ИТ-Сатка</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container-1-1 {
+        position: relative; /* Относительное позиционирование для дочерних элементов */
+        width: 100%; /* Занимает всю ширину экрана */
+        height: 100vh; /* Занимает всю высоту экрана */
+        background-image: url('img/Group 1000004188.png'); /* Фоновое изображение */
+        background-position: center;
+        background-size: cover; /* Изображение будет покрывать весь контейнер */
+        background-blend-mode: overlay;
+    }
+    .container-2-1 {
+        background-color: white;
+        font-size: 40px;
+    }
+    .flex-container {
+        display: flex;
+        align-items: center; /* Вертикальное выравнивание по центру */
+        justify-content: center; /* Горизонтальное выравнивание по центру */
+    }
+    .vos {
+        margin-top: 60px; /* Отступ сверху */
+        margin-left: auto; /* Центрирование */
+        margin-right: auto; /* Центрирование */
+        margin-bottom: 60px;
+        max-width: 1160px; /* Максимальная ширина для центрирования */
+    }
+    .vos ul {
+        list-style-type: disc; /* Тип маркера (диск) */
+        padding-left: 20px;    /* Отступ слева для списка */
+    }
+    .vos li {
+        margin-bottom: 10px;   /* Отступ между пунктами */
+    }
+    .container-3-1 {
+        background-color: white;
+        font-size: 40px;
+    }
+    .tx {
+        margin-top: 0px; /* Отступ сверху */
+        margin-left: auto; /* Центрирование */
+        margin-right: auto; /* Центрирование */
+        max-width: 1160px; /* Максимальная ширина для центрирования */
+    }
+    .scrin {
+        display: flex;          
+        justify-content: center;  
+        margin-top: 30px;     
+        margin-bottom: 60px;     
+    }
+
+
+
+.popup-menu {
+    position: fixed;
+    top: 0;
+    right: -480px; /* Скрыто за пределами экрана */
+    width: 480px; /* Ширина меню */
+    height: 100%; /* Высота меню */
+    background-color: #ffffff; /* Цвет фона */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Тень для меню */
+    transition: right 0.3s ease; /* Плавный переход */
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+}
+.popup-menu nav {
+    padding: 20px;
+}
+.popup-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.popup-menu li {
+    margin: 27px 0;
+}
+.popup-menu a {
+    text-decoration: none;
+    color: #252A32;
+    font-size: 18px;
+}
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Положение по вертикали */
+    right: 10px; /* Положение по горизонтали */
+    width: 30px; /* Установите ширину изображения */
+    height: auto; /* Высота будет пропорциональной */
+    margin: 20px 27px 0 0;
+}
+.open-popup {
+    cursor: pointer;
+    z-index: 1001; /* Чтобы изображение было поверх меню */
+    width: 40px; /* Установите ширину изображения */
+    height: auto; /* Высота будет пропорциональной */
+}
+
+
+
+
+
+
+
+
+    @media (max-width: 1920px) { 
+        .popup-navigation { 
+            display: none; /* Скрываем по умолчанию */ 
+        } 
+        .open-popup { 
+            display: none; 
+        } 
+    }
+    @media (max-width: 480px) {
+
+
+        .open-popup {
+        display: block;
+        top: 20px;
+        right: 20px;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 1001; /* Чтобы кнопка была поверх меню */
+    }
+
+    .popup-menu {
+        width: 200px; /* Уменьшаем ширину меню для мобильных устройств */
+        height: 300px; /* Устанавливаем высоту в 100% для полного экрана */
+    }
+    .close-button {
+        width: 25px; /* Уменьшаем размер кнопки закрытия */
+    }
+    .open-popup {
+        width: 30px; /* Уменьшаем размер кнопки открытия меню */
+    }
+    .popup-menu a {
+        font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+
+
+
+
+
+
+        .container-1-1 {
+            position: relative; /* Относительное позиционирование для дочерних элементов */
+            width: 100%; /* Занимает всю ширину экрана */
+            height: 100vh; /* Занимает всю высоту экрана */
+            background-image: url('img/Group\ 1000004188.png'); /* Фоновое изображение */
+            background-position: top; 
+            background-size: 480px 300px; /* Устанавливаем конкретные размеры фона */ 
+            background-repeat: no-repeat; /* Не повторять изображение */ 
+        }
+        .title {
+            height: 230px;
+            width: 400px;
+            padding: 0 30px 0 30px;
+            justify-content: center;
+        }
+        .title h2 {
+            font-size: 18px;
+            margin: 0 0 50px 0;
+            max-width: 300px;
+        }
+        .flex-container {
+            font-size: 18px;
+        }
+        .metka img {
+            width: 20px;
+            height: 20px;
+        }
+        .vos ul {
+            font-size: 12px;
+            margin: 0 40px 0 40px;
+        }
+        .tx {
+            margin: 0 40px 0 40px;
+        }
+        .scrin img {
+            max-width: 400px;
+        }
+    }
+    @media (max-width: 430px) {
+        .close-button {
+        margin: 0;
+        position: revert;
+        margin: 20px 0 0 100px;
+    }
+    .popup-menu li {
+        margin: 20px;
+    }
+    .popup-menu nav {
+        padding: 0 0 0 20px;
+    }
+    }
+</style>
+<body>
+    <div class="container-1-1">
+        <header class="header">
+            <div class="logo-container">
+                <div class="logo"><img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt=""></div>
+                <h1>Парк ИТ-Сатка</h1>
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#container-2">О нас</a></li>
+                    <li><a href="#container-3">Предлагаем</a></li>
+                    <li><a href="#contact-info">Контакты</a></li>
+                    <li><a href="4about.html">Приложение</a></li>
+                </ul>
+            </nav>
+            <img src="img/open.png" class="open-popup" onclick="toggleMenu()" alt="Меню" />
+        </header>
+        <div id="popup-menu" class="popup-menu">
+            <img src="img/exit.png" class="close-button" onclick="toggleMenu()" alt="Закрыть" />
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#container-2">О нас</a></li>
+                    <li><a href="#container-3">Предлагаем</a></li>
+                    <li><a href="#contact-info">Контакты</a></li>
+                    <li><a href="4about.html">Приложение</a></li>
+                </ul>
+            </nav>
+        </div>
+    <main>
+        <div class="title">
+            <h2>Система контроля работы автотранспорта и учета перевозимых грузов</h2>
+        </div>
+        <div class="container-2-1">
+            <div class="flex-container">
+                <div class="metka"><img src="img/push-pin_8224664 6.png" alt=""></div>
+                <h3>Система позволяет:</h3>
+            </div>
+        </div>
+        <div class="vos">
+            <ul>
+                <li>Вести учет перевозимых материалов (насыпных и в таре) с использованием автомобильных и ж/д весов</li>
+                <li>Формировать различные первичные документы (путевые листы, ТТН и т.п.)</li>
+                <li>Осуществлять контроль за работой и перемещениями автотранспорта с помощью средств спутниковой навигации</li>
+                <li>Подключать различное оборудование (весы, сканеры штрих-кодов, транспондеры и т.п.)</li>
+                <li>Обмениваться данными с различными системами (SAP, 1C и т.д.)</li>
+                <li>Формировать отчеты по перевозкам в различных ракурсах.</li>
+            </ul>
+        </div>
+        <div class="container-3-1">
+            <div class="flex-container">
+                <div class="metka"><img src="img/push-pin_8224664 6.png" alt=""></div>
+                <h3>Скриншоты программы</h3>
+            </div>
+        </div>
+        <div class="tx">
+                АРМ весовщика - предназначено для взвешивания автотранспорта в различных режимах в зависимости от типа документа на перевозку:
+        </div>
+        <div class="scrin">
+            <img src="img/5dd7e8b481d3e94541ec220f_D0B2D0B5D181D0BED0B2D0B0D18F_ 1.png" alt="">
+        </div>
+        <div class="tx">
+            АРМ ВТТН - модуль, предназначенный для создания документа на перевозку внутри предприятия:
+        </div>
+        <div class="scrin">
+            <img src="img/2scrin.png" alt="">
+        </div> 
+        <div class="tx">
+            АРМ весовщика - предназначено для взвешивания автотранспорта в различных режимах в зависимости от типа документа на перевозку:
+        </div>
+        <div class="scrin">
+            <img src="img/5dd7e8b481d3e94541ec220f_D0B2D0B5D181D0BED0B2D0B0D18F_ 1.png" alt="">
+        </div>
+        <div class="tx">
+            Модуль для контроля автотранспорта, проходящего через КПП. Имеет функцию отображения аварийных событий системы навигации, произошедших с момента создания документа на отгрузку:
+        </div>
+        <div class="scrin">
+            <img src="img/3scrin.png" alt="">
+        </div>
+        <div class="tx">
+            Отчет для анализа соответствия данных путевых листов и реальных перемещений автотранспорта:
+        </div>
+        <div class="scrin">
+            <img src="img/4scrin.png" alt="">
+        </div>
+        <div class="tx">
+            Модуль для контроля перемещения автотранспорта на основании данных навигации
+        </div>
+        <div class="scrin">
+            <img src="img/5scrin.png" alt="">
+        </div>
+    </main>
+    <div class="knopka">
+        <button id="scrollToTop" class="scroll-to-top" onclick="scrollToTop()" style="display: block;"></button>
+        </div>
+    <footer>
+        <div class="logo-container2">
+            <div class="logo2"><img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt=""></div>
+            <h1>Парк ИТ-Сатка</h1>
+            <nav class="navigation2">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#container-2">О нас</a></li>
+                    <li><a href="#container-3">Предлагаем</a></li>
+                    <li><a href="#contact-info">Контакты</a></li>
+                    <li><a href="4about.html">Приложение</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="contact-info"  class="contact-info">
+            <div class="phone">
+                <img src="img/phone.png" alt="">
+            </div>
+            <div class="number">
+                +7 (35161) 9-52-51
+            </div>
+        </div>
+        <div class="contact-info">
+            <div class="email">
+                <img src="img/Icon.png" alt="">
+            </div>
+            <div class="E-mail">
+                park@itsatka.ru
+                <br>
+                it-satka@yandex.ru
+            </div>
+        </div>
+        <div class="contact-info">
+           <div class="position">
+            <img src="img/123123.png" alt="">
+           </div>
+        <div class="adress">
+            Челябинская обл., г.Сатка, ул.Солнечная, 32
+        </div>
+    </div>
+    </footer>
+    <div class="end">
+        <div class="endtext">
+            © ООО "Парк ИТ - Сатка", 2017-2025.
+        </div>
+    </div>
+</body>
+<script src="script.js"></script> 
+</html>
