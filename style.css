@@ -1,0 +1,1079 @@
+body { 
+    font-family: 'Exo 2', sans-serif; 
+    margin: 0; 
+    padding: 0; 
+} 
+.container-1 { 
+    position: relative; /* Относительное позиционирование для дочерних элементов */ 
+    width: 100%; /* Занимает всю ширину экрана */ 
+    height: 100vh; /* Занимает всю высоту экрана */ 
+    background-image: url('img/баннер.jpg'); /* Фоновое изображение */ 
+    background-position: center; 
+    background-size: cover; /* Изображение будет покрывать весь контейнер */ 
+    background-blend-mode: overlay; 
+} 
+.logo-container { 
+    display: flex; 
+    align-items: center; 
+    margin-left: 148px; 
+} 
+.logo img { 
+    width: 58px; 
+    height: 58px; 
+    margin-right: 10px; 
+} 
+.header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: rgba(255, 255, 255, 0.616); 
+    padding: 41px 70px 41px 0px; 
+} 
+.header h1 { 
+    margin: 0; 
+    font-size: 30px; 
+} 
+.navigation ul { 
+    list-style-type: none; 
+    margin: 0; 
+    margin-left: 250px; 
+    display: flex; 
+} 
+.navigation li { 
+    margin-left: 20px; 
+} 
+.navigation a { 
+    text-decoration: none; 
+    color: #333; 
+} 
+.navigation a:hover { 
+    text-decoration: underline; 
+} 
+.title { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    height: 760px; 
+    color: white; 
+    text-align: left; 
+    padding: 0px 385px; 
+} 
+.logo-container, 
+.navigation, 
+.footer { 
+    display: flex; 
+    width: 100%; /* Занимаем всю ширину родительского контейнера */ 
+} 
+.container-2 h3, 
+.container-3 h4, 
+.container-4 h4, 
+.container-5 h4, 
+.reviews-container h4 { 
+    text-align: center; /* Центрируем текст заголовков */ 
+} 
+/* Пример для других элементов, если требуется */ 
+.block { 
+    margin: 0 auto; /* Центрируем блоки */ 
+    max-width: 385px; /* Ширина блоков */ 
+} 
+.title h2 { 
+    color: #252A32; 
+    font-size: 40px; 
+    max-width: 600px; 
+    margin: 0 0 30px; 
+} 
+.title p { 
+    color: #252A32; 
+    font-size: 18px; 
+    padding-bottom: 55px; 
+} 
+.button { 
+    display: inline-block; 
+    padding: 18px 46px; 
+    margin-top: 20px; 
+    background-color: #252A32; 
+    border: 2px solid #252A32; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    max-width: 120px; 
+    text-align: center; 
+    cursor: pointer; 
+} 
+.button:hover { 
+    background-color: #ffffff; 
+    color: #252A32; 
+    border: 2px solid black; 
+} 
+.container-2 { 
+    max-width: 1440px; 
+    margin: 0 auto; 
+    background-color: white; 
+    margin: 140px 250px 140px 250px; 
+    font-size: 40px; 
+} 
+.content { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 0px 147px; 
+} 
+.text-content { 
+    max-width: 500px; 
+    margin-top: 35px; 
+} 
+.image-row { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    margin-left: 25px; 
+} 
+.image-group { 
+    display: flex; 
+    margin-bottom: 28px; 
+} 
+.image-group img { 
+    max-width: 100%; 
+    height: auto; 
+    margin-right: 28px; 
+} 
+.image-group img:last-child { 
+    margin-right: 0; 
+} 
+.container-2 h3 { 
+    margin-bottom: 40px; 
+    padding: 0px 147px; 
+} 
+.container-2 p { 
+    font-size: 18px; 
+} 
+.container-3 { 
+    height: 370px; 
+    background: #F3F3F3; 
+    padding: 120px; 
+    padding-bottom: 0px; 
+} 
+.container-3 h4 { 
+    color: #252A32; 
+    text-align: center; 
+    font-size: 40px; 
+    margin: 0 0 30px; 
+} 
+.services { 
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+} 
+.service-block1, 
+.service-block2, 
+.service-block3 { 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 35px; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    width: 250px; 
+    height: 30px; 
+    margin: 15px; 
+} 
+.service-icon { 
+    max-width: 60px; 
+    height: auto; 
+    margin-right: 15px; 
+} 
+.service-block h5 { 
+    margin: 0; 
+    text-align: center; 
+    font-size: 18px; 
+    color: #252A32; 
+    padding-top: 10px; 
+} 
+.container-4 { 
+    background-color: #ffffff; 
+    padding: 120px; 
+    border-radius: 15px; 
+} 
+.container-4 h4 { 
+    color: #252A32; 
+    text-align: center; 
+    font-size: 40px; 
+    margin: 0 0 30px; 
+} 
+.development-content { 
+    display: flex; 
+    gap: 40px; 
+    padding-left: 50px; 
+    justify-content: center; 
+} 
+.development-block { 
+    background-color: white; 
+    border-radius: 10px; 
+    width: 640px; 
+    height: auto; 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0 12px 40px rgba(0, 0, 0, 0.05); 
+    padding: 0; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+} 
+.development-header { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin: 0; 
+} 
+.header-content { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+} 
+.development-block h6 { 
+    font-size: 24px; 
+    color: #252A32; 
+    margin: 76px 52px 10px; 
+    max-width: 100%; 
+    width: 100%; 
+    word-wrap: break-word; 
+} 
+.button2 { 
+    display: inline-flex; 
+    justify-content: center; 
+    padding: 10px 20px; 
+    background-color: #252A32; 
+    border: 2px solid #252A32; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    max-width: 150px; 
+} 
+.button2:hover { 
+    background-color: #ffffff; 
+    color: #252A32; 
+    border: 2px solid black; 
+} 
+.development-image { 
+    max-width: 100%; 
+    height: auto; 
+    margin-left: auto; 
+} 
+.button2 img { 
+    margin-left: 10px; 
+    width: auto; 
+    height: auto; 
+} 
+.development-block a { 
+    display: block; 
+    text-align: center; 
+    margin: 60px 52px; 
+    max-width: 150px; 
+} 
+.container-5 { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 120px; 
+    background-color: #D9D9D9; 
+} 
+.container-5 h4 { 
+    color: #252A32; 
+    text-align: center; 
+    font-size: 40px; 
+    margin: 0 0 30px; 
+} 
+.blocks-container { 
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+} 
+.block { 
+    background-color: white; 
+    border-radius: 25px; 
+    width: 385px;  
+    height: 468px; 
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+    margin: 0 10px; 
+} 
+.blocks-container p { 
+    text-align: start; 
+    font-size: 11px; 
+    margin-left: 37px; 
+    margin-top: 10px; 
+} 
+.blocks-container h6 { 
+    text-align: start; 
+    font-size: 17px; 
+    margin-left: 37px; 
+    margin-top: 20px; 
+} 
+.description { 
+    text-align: left; 
+    font-size: 13px; 
+    padding-left: 4px; 
+    margin-top: 10px; 
+} 
+.strelki { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px; 
+} 
+.arrow { 
+    margin: 0 10px; 
+    cursor: pointer; 
+} 
+.arrow img { 
+    width: 30px; 
+    height: 30px; 
+} 
+.newimg { 
+    width: 305px; 
+    height: 250px; 
+    margin-left: 40px; 
+} 
+.reviews-container h4 { 
+    color: #252A32; 
+    text-align: center; 
+    font-size: 40px; 
+    margin-top: 140px; 
+} 
+.review { 
+    display: flex; 
+    align-items: flex-start; 
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 15px; 
+} 
+.reviews-container { 
+    background: white; 
+    display: flex; 
+    flex-direction: column; 
+    gap: 20px; 
+    padding: 120px; 
+} 
+.review-group { 
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+} 
+.circle-img { 
+    margin-right: 15px; 
+} 
+.review-text { 
+    font-size: 16px; 
+    max-width: 500px; 
+} 
+.review-group { 
+    margin-left: 143px; 
+    margin-right: 160px; 
+} 
+.review-text p { 
+    margin-top: 5px; 
+} 
+.review-text h5 { 
+    font-size: 20px; 
+    margin-top: 10px; 
+    margin-bottom: 3px; 
+} 
+.container-6 { 
+    position: relative; /* Относительное позиционирование для дочерних элементов */ 
+    width: 100%; /* Занимает всю ширину экрана */ 
+    height: 100vh; /* Занимает всю высоту экрана */ 
+    background-image: url('img/s\ nami.png'); /* Фоновое изображение */ 
+    background-position: center; 
+    background-size: cover; /* Изображение будет покрывать весь контейнер */ 
+    background-blend-mode: overlay; 
+} 
+.container-6 h4 { 
+    color: #ffffff; 
+    text-align: center; 
+    font-size: 40px; 
+    padding-top: 92px; 
+} 
+.parent-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    color: white; 
+    font-size: 18px; 
+    margin-top: 20px; 
+    text-align: center; 
+} 
+.text { 
+    margin-top: 60px; 
+    max-width: 620px; 
+} 
+.forma { 
+    width: 350px; 
+    float: right; 
+    margin-right: 180px; 
+    margin-top: 150px; 
+    background-color: rgba(255, 255, 255, 0); 
+    border-radius: 10px; 
+} 
+.form-group { 
+    margin-bottom: 20px; 
+} 
+input { 
+    width: 330px; 
+    padding: 10px; 
+    border: none; 
+    border-bottom: 2px solid white; 
+    background-color: transparent; 
+    color: white; 
+    font-size: 16px; 
+} 
+input:focus { 
+    outline: none; 
+    border-bottom: 2px solid #ffffff; 
+} 
+input::placeholder { 
+    color: rgba(255, 255, 255, 0.7); 
+} 
+.submit-button { 
+    background-color: #252a32; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    font-size: 18px; 
+    cursor: pointer; 
+    margin-top: 50px; 
+    float: right; 
+    border: 2px solid #252a32; 
+} 
+textarea { 
+    width: 330px; 
+    padding: 10px; 
+    border: none; 
+    border-bottom: 2px solid white; 
+    background-color: transparent; 
+    color: white; 
+    font-size: 16px; 
+    resize: vertical; 
+} 
+textarea:focus { 
+    outline: none; 
+    border-bottom: 2px solid #ffffff; 
+} 
+textarea::placeholder { 
+    color: rgba(255, 255, 255, 0.7); 
+} 
+.submit-button:hover { 
+    background-color: #ffffff; 
+    color: #252A32;
+    border: 2px solid black; 
+} 
+footer { 
+    margin-top: 174px; 
+    max-width: 1920px; 
+    margin: 0 auto; 
+} 
+.logo-container2 { 
+    display: flex; 
+    align-items: center; 
+    margin: 41px 70px 41px 130px; 
+} 
+.logo2 img { 
+    width: 58px; 
+    height: 58px; 
+    margin-right: 10px; 
+} 
+.navigation2 ul { 
+    list-style-type: none; 
+    margin-left: 600px; 
+    display: flex; 
+} 
+.navigation2 li { 
+    margin-left: 20px; 
+} 
+.navigation2 a { 
+    text-decoration: none; 
+    color: #333; 
+} 
+.navigation2 a:hover { 
+    text-decoration: underline; 
+} 
+.contact-info { 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 30px; 
+    margin-left: 150px; 
+    margin-top: 20px; 
+} 
+.phone { 
+    margin-right: 10px; 
+} 
+.number { 
+    color: #333; 
+    font-size: 16px; 
+} 
+.email { 
+    margin-right: 10px; 
+} 
+.E-mail { 
+    color: #333; 
+    font-size: 16px; 
+} 
+.position { 
+    margin-right: 15px; 
+} 
+.adress { 
+    color: #333; 
+    font-size: 16px; 
+} 
+.end { 
+    display: flex; 
+    background: #252A32; 
+    margin-top: 100px; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 0; 
+    width: 100%; /* Добавлено свойство для ширины */ 
+} 
+.endtext { 
+    text-align: center; 
+    color: #ffffff; 
+    font-size: 14px; 
+} 
+
+
+
+
+
+
+
+.scroll-to-top {
+    position: fixed; /* Фиксированное позиционирование */
+    bottom: 20px; /* Отступ от нижней части экрана */
+    right: 20px; /* Отступ от правой части экрана */
+    background-image: url(img/Вверх.png);
+    border: none; /* Убрать границы */
+    border-radius: 100px; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    z-index: 1000; /* Поверх других элементов */
+    width: 40px;
+    height: 40px;
+    background-position: center; 
+    background-size: cover; /* Изображение будет покрывать весь контейнер */ 
+    border: 2px solid #252a32; 
+}
+
+
+
+
+
+
+.popup-menu {
+    position: fixed;
+    top: 0;
+    right: -480px; /* Скрыто за пределами экрана */
+    width: 480px; /* Ширина меню */
+    height: 100%; /* Высота меню */
+    background-color: #ffffff; /* Цвет фона */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Тень для меню */
+    transition: right 0.3s ease; /* Плавный переход */
+    z-index: 1000; /* Чтобы меню было поверх других элементов */
+}
+.popup-menu nav {
+    padding: 20px;
+}
+.popup-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+.popup-menu li {
+    margin: 27px 0;
+}
+.popup-menu a {
+    text-decoration: none;
+    color: #252A32;
+    font-size: 18px;
+}
+
+.open-popup {
+    cursor: pointer;
+    z-index: 1001; /* Чтобы изображение было поверх меню */
+    width: 40px; /* Установите ширину изображения */
+    height: auto; /* Высота будет пропорциональной */
+}
+/* Медиа-запрос для адаптации стилей на экранах шириной 480 пикселей и меньше */
+
+
+
+@media (max-width: 1920px) { 
+    .popup-navigation { 
+        display: none; /* Скрываем по умолчанию */ 
+    } 
+    .open-popup { 
+        display: none; 
+    } 
+} 
+@media (max-width: 480px) { 
+    body { 
+        font-size: 12px; /* Увеличиваем размер шрифта для удобства чтения */ 
+        font-family: 'Exo 2', sans-serif; 
+    } 
+
+
+
+
+    .open-popup {
+        display: block;
+        top: 20px;
+        right: 20px;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        z-index: 1001; /* Чтобы кнопка была поверх меню */
+    }
+
+    .popup-menu {
+        width: 300px; /* Уменьшаем ширину меню для мобильных устройств */
+        height: 300px; /* Устанавливаем высоту в 100% для полного экрана */
+    }
+    .close-button {
+        width: 25px; /* Уменьшаем размер кнопки закрытия */
+    }
+    .open-popup {
+        width: 30px; /* Уменьшаем размер кнопки открытия меню */
+    }
+    .popup-menu a {
+        font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+    }
+
+
+
+    .knopka {
+        display: none;
+    }
+
+
+
+
+
+
+    .close-button {
+        cursor: pointer;
+        position: absolute;
+        top: 10px; /* Положение по вертикали */
+        right: 10px; /* Положение по горизонтали */
+        width: 30px; /* Установите ширину изображения */
+        height: auto; /* Высота будет пропорциональной */
+        margin: 10px 130px 0px 0px;
+    }
+
+    
+    
+    
+    .container-1 { 
+        position: relative; /* Относительное позиционирование для дочерних элементов */ 
+        width: 100%; /* Занимает всю ширину экрана */ 
+        height: 100vh; /* Занимает всю высоту экрана */ 
+        background-image: url('img/баннер.jpg'); /* Устанавливаем фоновое изображение */ 
+        background-position: top    ; 
+        background-size: 480px 300px; /* Устанавливаем конкретные размеры фона */ 
+        background-repeat: no-repeat; /* Не повторять изображение */ 
+    } 
+    .logo-container { 
+        flex-direction: row; /* Изменяем направление на колонку */ 
+        align-items: center; /* Центрируем элементы */ 
+        margin: 0; /* Убираем отступы */ 
+    } 
+    .header { 
+        padding: 20px; /* Уменьшаем отступы */ 
+        height: 42px;
+    } 
+    .navigation { 
+        display: none; /* Скрываем навигацию для мобильных устройств */ 
+    } 
+    .header h1 { 
+        font-size: 10px; 
+        max-width: 200; 
+    } 
+    .logo img{ 
+        width: 30px; 
+        height: 30px; 
+    } 
+    .title { 
+        height: 230px; 
+        width: 400px; 
+        padding: 0 40px 0 40px; 
+        justify-content: center; 
+    } 
+    .title h2 { 
+        font-size: 18px; 
+        margin: 0 50px 0 50px; 
+        max-width: 300px; 
+    } 
+    .title p { 
+        padding: 0; 
+        font-size: 10px; 
+        max-width: 250px; 
+        margin: 10px 50px 0 50px; 
+    } 
+    .button { 
+        font-size: 8px; /* Уменьшение размера шрифта */ 
+        max-width: 50px; /* Уменьшение максимальной ширины */ 
+        padding: 8px 20px; /* Уменьшение отступов */ 
+        margin: 20px 50px 0 50px; 
+    } 
+    .container-2 { 
+        width: 480px; 
+        margin: 0; 
+        padding: 0 0 30px 0; 
+    } 
+    .text-content { 
+        margin: 0 90px 0 90px 
+    } 
+    .content { 
+        flex-direction: column; 
+        padding: 0; 
+    } 
+    .container-2 p { 
+        font-size: 12px; 
+        width: 300px; 
+    } 
+    .container-2 h3 { 
+        font-size: 18px; 
+    } 
+    .image-row { 
+        display: block; 
+        margin: 0; 
+    } 
+    .image-group img { 
+        max-width: 30%; 
+        margin-right: 16px; 
+    } 
+    .image-group { 
+        display: flex; /* Устанавливаем контейнер как flex-контейнер */ 
+        justify-content: center; 
+        margin-bottom: 16px; 
+    } 
+    .container-3 { 
+        padding: 0; 
+        height: 270px; 
+        margin: 0; 
+    } 
+    .container-3 h4 { 
+        font-size: 18px; 
+        padding-top: 30px; 
+    } 
+    .services { 
+        display: flex; 
+        flex-direction: row; 
+        align-items: center; 
+    } 
+    .service-block1 { 
+        margin: 10px; /* Отступы между блоками */ 
+        text-align: center; /* Центрируем текст внутри блоков */ 
+        width: 250px; 
+        height: 15px; 
+    } 
+    .service-block2,.service-block3 { 
+        width: 150px; 
+        height: 15px; 
+    } 
+    .container-4 { 
+        padding: 40px; 
+    } 
+    .container-4 h4 { 
+        font-size: 18px; 
+    } 
+    .development-content { 
+        display: flex; 
+        gap: 40px; 
+        padding-left: 50px; 
+        flex-direction: column; 
+        gap: 14px; 
+    } 
+    .development-block { 
+        width: 300px; 
+        height: 171px; 
+    } 
+    .development-block h6 { 
+        font-size: 12px; 
+        margin: 35px 0 0 25px; 
+    } 
+    .development-image { 
+        max-width: 47%; 
+    } 
+    .development-block a { 
+        margin: 0; 
+        max-width: 100px; 
+        max-height: 30px; 
+        margin: 30px 0 0 25px; 
+    } 
+    .button2 { 
+        font-size: 7px; 
+        max-width: 150px; 
+        margin: 106px 0 35px 25px; 
+    } 
+    .button2 img { 
+        display: none; 
+    } 
+    .container-5 { 
+        padding: 30px; 
+    } 
+    .container-5 h4 { 
+        font-size: 18px; 
+    } 
+    .block { 
+        width: 228px; 
+        height: 227px; 
+    } 
+    .newimg { 
+        width: 181px; 
+        height: 148px; 
+        margin: 0; 
+    } 
+    .blocks-container p { 
+        font-size: 6px; 
+        margin: 10px 0 0 0; 
+        padding: 0; 
+    } 
+    .blocks-container h6 { 
+        font-size: 10px; 
+        margin: 0; 
+    } 
+    .block-p { 
+        margin-top: 6px;     
+    } 
+    .strelki { 
+        display: none; 
+    } 
+    .reviews-container { 
+        margin-bottom: 30px; 
+        padding: 0; 
+    } 
+    .reviews-container h4 { 
+        font-size: 18px; 
+        margin: 30px; 
+    } 
+    .circle-img { 
+        width: 60px; 
+        height: 60px; 
+    } 
+    .review-group { 
+        display: flex; 
+        justify-content: space-between; 
+        gap: 20px; 
+        flex-direction: column; 
+    } 
+    .review-text p { 
+        font-size: 10px; 
+        width: 274px; 
+    } 
+    .review-text h5 { 
+        font-size: 12px; 
+    } 
+    .review { 
+        justify-content: center; 
+    } 
+    .container-6 { 
+        position: relative; /* Относительное позиционирование для дочерних элементов */ 
+        width: 100%; /* Занимает всю ширину экрана */ 
+        height: 300px; /* Занимает всю высоту экрана */ 
+        background-image: url('img/s\ nami.png'); /* Устанавливаем фоновое изображение */ 
+        background-position: top    ; 
+        background-size: 480px 300px; /* Устанавливаем конкретные размеры фона */ 
+        background-repeat: no-repeat; /* Не повторять изображение */ 
+    } 
+    .container-6 h4 { 
+        font-size: 18px; 
+        margin: 0; 
+        padding-top: 28px; 
+    } 
+    .text { 
+        display: none; 
+    } 
+    .forma { 
+        margin: 0; 
+    } 
+    input { 
+        width: 168px; 
+        font-size: 7px; 
+    } 
+    textarea { 
+        width: 168px; 
+        font-size: 7px; 
+    } 
+    .submit-button { 
+        font-size: 8px; 
+        float: none; 
+        margin-top: 0; 
+        margin-left: 106px; 
+    } 
+    .logo2 img { 
+        width: 25px; 
+        height: 25px; 
+    } 
+    .logo-container2 h1 { 
+        font-size: 11px; 
+    }  
+    .logo-container2 { 
+        margin: 41px 0 0 31px; 
+        text-align: center; 
+    } 
+    .navigation2 { 
+        display: none; 
+    } 
+    .phone img { 
+        width: 15; 
+        height: 15px; 
+    }  
+    .number { 
+        font-size: 10px; 
+    } 
+    .email img { 
+        width: 15; 
+        height: 15px; 
+    }  
+    .E-mail { 
+        font-size: 10px; 
+    } 
+    .position img { 
+        width: 15; 
+        height: 15px; 
+    }  
+    .adress { 
+        font-size: 10px; 
+        max-width: 150px; 
+    } 
+    .contact-info { 
+        margin: 30px 0 0 50px; 
+    } 
+    .endtext { 
+        font-size: 12px 
+    } 
+}  
+
+
+
+
+@media (max-width: 440px) {
+    
+    .service-block1 {
+        margin: 10px;
+        text-align: center;
+        width: 150px;
+        height: 15px;
+    }
+    .development-content {
+        display: flex;
+        gap: 40px;
+        padding-left: 35px;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .forma {
+        max-width: 310px;
+
+    }
+}
+
+
+@media (max-width: 430px) {
+    .title {
+        padding: 0 0 0 0 ;
+    }
+    .container-2 {
+        width: 350px;
+    }
+
+    .text-content {
+        justify-content: center;
+    }
+    .container-2 h3 {
+        padding: 0;
+    }
+    .text-content {
+        justify-items: center;
+        margin: 0;  
+        
+    }
+    .content {
+        align-items: center ;
+    }
+    .popup-menu {
+        width: 350px;
+    }
+    .close-button {
+        margin: 0;
+        position: revert;
+        margin: 20px 0 0 100px;
+    }
+    .popup-menu li {
+        margin: 20px;
+    }
+    .popup-menu nav {
+        padding: 0 0 0 20px;
+    }
+        
+
+
+
+    .service-block1 {
+        margin: 10px;
+        text-align: center;
+        width: 150px;
+        height: 5px;
+    }
+
+
+
+    .service-block1, .service-block2, .service-block3 {
+        width: 150px;
+        height: 5px;
+        margin: 5px;
+    }
+    .service-icon img {
+        width: 15px;
+        height: 15px;
+
+    }
+
+
+
+
+    .development-content {
+        display: flex;
+        gap: 40px;
+        padding: 0;
+        flex-direction: column;
+        gap: 14px;
+    }
+    .container-4 {
+        padding: 20px;
+    }
+
+    .review-text {
+        max-width: 100px;
+    }
+    .review-group {
+        margin: 0;
+    }
+    .review {
+        justify-content: flex-start;
+    }
+    .review-text p {
+        max-width: 220px;
+    }
+
+
+
+
+
+
+    .forma {
+        max-width: 310px;
+
+    }
+
+
+
+
+
+
+}
