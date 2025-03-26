@@ -6,6 +6,7 @@
     <title>Парк ИТ-Сатка</title> 
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/png" href="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png">
 </head> 
 <body> 
 <div class="container-1"> 
@@ -23,6 +24,7 @@
                 <li><a href="4about.html">Приложение</a></li>
             </ul>
         </nav>
+        <button id="theme-toggle" class="theme-toggle"><img src="img/dark-mode_12657245.png" alt=""></button>
         <img src="img/open.png" class="open-popup" onclick="toggleMenu()" alt="Меню" />
     </div>
     <div id="popup-menu" class="popup-menu" >
@@ -44,7 +46,7 @@
             <p>Делаем информационные технологии доступными!</p> 
             <a href="#more" class="button">Подробнее</a> 
         </div> 
-        <div id="container-2" class="container-2"> 
+        <div id="container-2" class="container-2 fade-in"> 
             <h3 class="text-wrapper">О нашей команде</h3> 
             <div class="content"> 
                 <div class="text-content text-wrapper"> 
@@ -64,82 +66,109 @@
                 </div> 
             </div> 
         </div> 
-        <div id="container-3" class="container-3 text-wrapper"> 
+        <div id="container-3" class="container-3 text-wrapper fade-in"> 
             <h4>Наши услуги</h4> 
             <div class="services"> 
-                <div class="service-block1"> 
+                <div class="service-block1 scale-up"> 
                     <div class="service-icon"> 
                         <img src="img/1uslugi.png" alt="Услуга 1" class="icon"> 
                     </div> 
                     <h5>Внедрение, сопровождение 1С:</h5> 
                 </div> 
-                <div class="service-block2"> 
+                <div class="service-block2 scale-up"> 
                     <div class="service-icon"> 
                         <img src="img/2uslugi.png" alt="Услуга 2" class="icon">  
                     </div> 
                     <h5>Разработка ПО</h5> 
                 </div> 
-                <div class="service-block3"> 
+                <div class="service-block3 scale-up"> 
                     <div class="service-icon"> 
                         <img src="img/click.png" alt="Услуга 3" class="icon">  
                     </div> 
                     <h5>Web-разработка</h5> 
                 </div> 
             </div> 
-        </div> 
-        <div id="container-4" class="container-4"> 
-            <h4>Разработки</h4> 
-            <div class="development-content"> 
-                <div class="development-block"> 
-                    <div class="development-header"> 
-                        <div class="header-content"> 
-                            <h6>Система контроля работы автотранспорта и учета перевозимых грузов</h6> 
-                            <a href="2about.html" class="button2">Подробнее <img src="img/Line (Stroke).png" alt=""></a> 
-                        </div> 
-                        <img src="img/Rectangle 24246.png" alt="" class="development-image"> <!-- Изображение --> 
-                    </div> 
+        </div>
+       <div id="container-4" class="container-4 fade-in"> 
+    <h4>Разработки</h4> 
+    <div class="development-content"> 
+        <div class="development-block swing"> 
+            <div class="development-header"> 
+                <div class="header-content "> 
+                    <h6>Система контроля работы автотранспорта и учета перевозимых грузов</h6> 
+                    <a href="2about.html" class="button2">
+                        <span class="button-text">Подробнее</span>
+                        <img src="img/Line (Stroke).png" alt="" class="icon">
+                    </a>
                 </div> 
-                <div class="development-block"> 
-                    <div class="development-header"> 
-                        <div class="header-content"> 
-                            <h6>Система электронного документооборота предприятия</h6> 
-                            <a href="3.about.html" class="button2">Подробнее <img src="img/Line (Stroke).png" alt=""></a> 
-                        </div> 
-                        <img src="img/Rectangle document.png" alt="" class="development-image"> <!-- Изображение --> 
-                    </div> 
-                </div> 
+                <img src="img/Rectangle 24246.png" alt="" class="development-image"> 
             </div> 
         </div> 
-        <div id="container-5" class="container-5">  
-            <h4>Новости</h4> 
-            <div class="blocks-container"> <!-- Обернем блоки в отдельный контейнер --> 
-                <div class="block"> 
-                    <h5><img src="img/Rectangle 54.png" alt="" class="newimg"></h5> 
-                    <p>12 Февраля 2023</p> 
-                    <h6>Lorem ipsum dolor sit amet </h6> 
-                    <p class="description">Lorem ipsum dolor sit amet consectetur. Posuere aliquam bibendum quis blandit nulla.</p> 
+        <div class="development-block"> 
+            <div class="development-header"> 
+                <div class="header-content"> 
+                    <h6>Система электронного документооборота предприятия</h6> 
+                    <a href="3.about.html" class="button2">Подробнее <img src="img/Line (Stroke).png" alt=""></a> 
                 </div> 
-                <div class="block"> 
-                    <h5><img src="img/Rectangle 54.png" alt="" class="newimg"></h5> 
-                    <p>12 Февраля 2023</p> 
-                    <h6>Lorem ipsum dolor sit amet </h6> 
-                    <p class="description">Lorem ipsum dolor sit amet consectetur. Posuere aliquam bibendum quis blandit nulla.</p> 
-                </div> 
-                <div class="block"> 
-                    <h5><img src="img/Rectangle 54.png" alt="" class="newimg"></h5> 
-                    <p>12 Февраля 2023</p> 
-                    <h6>Lorem ipsum dolor sit amet </h6> 
-                    <p class="description">Lorem ipsum dolor sit amet consectetur. Posuere aliquam bibendum quis blandit nulla.</p> 
-                </div> 
-            </div> 
-            <div class="strelki"> 
-                <a href="#previous" class="arrow"><img src="img/стрелка2.png" alt=""></a> 
-                <a href="#next" class="arrow"><img src="img/стрелка.png" alt=""></a> 
+                <img src="img/Rectangle document.png" alt="" class="development-image"> 
             </div> 
         </div> 
-        <div class="reviews-container"> 
+    </div> 
+</div>
+<div id="container-5" class="container-5 fade-in">  
+    <h4>Новости</h4> 
+    <div class="blocks-container" id="news-container"> 
+        <div class="block"> 
+            <h5><img src="img/1new.jpg" alt="" class="newimg"></h5> 
+            <p>12 Февраля 2023</p> 
+            <h6>Внедрение 1С:Предприятие в компании "ТехноСервис"</h6> 
+            <p class="description">Компания "ТехноСервис" успешно завершила внедрение системы 1С:Предприятие для автоматизации процессов учета и управления. Теперь сотрудники могут оперативно обрабатывать заказы и контролировать запасы, что значительно увеличивает эффективность работы.</p> 
+            <img src="img/стрелка.png" alt="" class="imgnext">
+        </div> 
+        <div class="block"> 
+            <h5><img src="img/2new.jpg" alt="" class="newimg"></h5> 
+            <p>13 Февраля 2023</p> 
+            <h6>Обновление 1С:Предприятие для "СтройГрупп"</h6> 
+            <p class="description">В компании "СтройГрупп" завершено обновление программного обеспечения 1С:Предприятие. Новые функции позволят улучшить взаимодействие между отделами и ускорить процесс документооборота.</p> 
+            <img src="img/стрелка.png" alt="" class="imgnext">
+        </div> 
+        <div class="block"> 
+            <h5><img src="img/3new.jpg" alt="" class="newimg"></h5> 
+            <p>14 Февраля 2023</p> 
+            <h6>Партнерство с "Электроника"</h6> 
+            <p class="description">Мы рады сообщить о новом партнерстве с компанией "Электроника" для внедрения 1С:Предприятие. Совместная работа позволит оптимизировать учет товаров и улучшить клиентский сервис.</p> 
+            <img src="img/стрелка.png" alt="" class="imgnext">
+        </div> 
+        <div class="block"> 
+            <h5><img src="img/4.new.jpg" alt="" class="newimg"></h5> 
+            <p>15 Февраля 2023</p> 
+            <h6>Кейс внедрения 1С:Предприятие в "МедТех"</h6> 
+            <p class="description">Компания "МедТех" поделилась успешным опытом внедрения 1С:Предприятие, которое помогло значительно сократить время на обработку заказов и упростить учет медицинских товаров.</p> 
+            <img src="img/стрелка.png" alt="" class="imgnext">
+        </div>
+        <div class="block"> 
+            <h5><img src="img/5.new.jpg" alt="" class="newimg"></h5> 
+            <p>16 Февраля 2023</p> 
+            <h6>Обучение сотрудников 1С:Предприятие</h6> 
+            <p class="description">Мы провели обучение для сотрудников наших клиентов по работе с 1С:Предприятие. Участники получили полезные знания и навыки, которые помогут им эффективно использовать систему в своей работе.</p> 
+            <img src="img/стрелка.png" alt="" class="imgnext">
+        </div>
+        <div class="block"> 
+            <h5><img src="img/6.new.jpg" alt="" class="newimg"></h5> 
+            <p>17 Февраля 2023</p> 
+            <h6>Новая версия 1С:Предприятие</h6> 
+            <p class="description">С радостью сообщаем о выходе новой версии 1С:Предприятие, которая включает в себя множество улучшений и новых функций для удобства пользователей.</p> 
+            <img src="img/стрелка.png" alt="" class="imgnext">
+        </div>
+    </div> 
+    <div class="strelki"> 
+        <a href="#previous" class="arrow" id="prev-button"><img src="img/стрелка2.png" alt=""></a> 
+        <a href="#next" class="arrow" id="next-button"><img src="img/стрелка.png" alt=""></a> 
+    </div> 
+</div>
+        <div class="reviews-container "> 
             <h4>Отзывы наших клиентов</h4> 
-            <div class="review-group"> 
+            <div class="review-group "> 
                 <div class="review"> 
                     <div class="review-image"> 
                         <img src="img/Ellipse 1.png" alt="Клиент 1" class="circle-img"> <!-- Картинка клиента --> 
@@ -206,52 +235,53 @@
                 </form> 
             </div> 
         </div> 
-    <footer> 
-        <div class="logo-container2"> 
-            <div class="logo2"><img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt=""></div> 
-            <h1>Парк ИТ-Сатка</h1> 
-            <nav class="navigation2"> 
-                <ul> 
-                    <li><a href="index.html">Главная</a></li> 
-                    <li><a href="#container-2">О нас</a></li> 
-                    <li><a href="#container-3">Предлагаем</a></li> 
-                    <li><a href="#contact-info">Контакты</a></li> 
-                    <li><a href="4about.html">Приложение</a></li> 
-                </ul> 
-            </nav> 
-        </div> 
-        <div id="contact-info"  class="contact-info"> 
-            <div class="phone"> 
-                <img src="img/phone.png" alt=""> 
+        <footer> 
+            <div class="logo-container2"> 
+                <div class="logo2"><img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt="">
+                <h1>Парк ИТ-Сатка</h1> 
             </div> 
-            <div class="number"> 
-                +7 (35161) 9-52-51 
+                <nav class="navigation2"> 
+                    <ul> 
+                        <li><a href="index.html">Главная</a></li> 
+                        <li><a href="#container-2">О нас</a></li> 
+                        <li><a href="#container-3">Предлагаем</a></li> 
+                        <li><a href="#contact-info">Контакты</a></li> 
+                        <li><a href="4about.html">Приложение</a></li> 
+                    </ul> 
+                </nav> 
+            </div>
+            <div id="contact-info" class="contact-info"> 
+                <div class="phone"> 
+                    <img src="img/phone.png" alt=""> 
+                </div> 
+                <div class="number"> 
+                    +7 (35161) 9-52-51 
+                </div> 
             </div> 
-        </div> 
-        <div class="contact-info"> 
-            <div class="email"> 
-                <img src="img/Icon.png" alt=""> 
+            <div class="contact-info"> 
+                <div class="email"> 
+                    <img src="img/Icon.png" alt=""> 
+                </div> 
+                <div class="E-mail"> 
+                    park@itsatka.ru 
+                    <br> 
+                    it-satka@yandex.ru 
+                </div> 
             </div> 
-            <div class="E-mail"> 
-                park@itsatka.ru 
-                <br> 
-                it-satka@yandex.ru 
+            <div class="contact-info"> 
+                <div class="position"> 
+                    <img src="img/123123.png" alt=""> 
+                </div> 
+                <div class="adress"> 
+                    Челябинская обл., г.Сатка, ул.Солнечная, 32 
+                </div> 
             </div> 
-        </div> 
-        <div class="contact-info"> 
-           <div class="position"> 
-            <img src="img/123123.png" alt=""> 
-           </div> 
-        <div class="adress"> 
-            Челябинская обл., г.Сатка, ул.Солнечная, 32 
-        </div> 
-    </div> 
-    <div class="end"> 
-        <div class="endtext"> 
-            © ООО "Парк ИТ - Сатка", 2017-2025. 
-        </div> 
-    </div> 
-</footer> 
+            <div class="end"> 
+                <div class="endtext"> 
+                    © ООО "Парк ИТ - Сатка", 2017-2025. 
+                </div> 
+            </div> 
+        </footer>
 </main> 
 </body> 
 <div class="knopka">
