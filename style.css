@@ -1101,16 +1101,17 @@ footer {
     } 
     .blocks-container {
         display: flex; /* Используем flexbox для горизонтального расположения */
-        overflow-x: scroll; /* Позволяем горизонтальную прокрутку */
+        overflow-x: auto; /* Позволяем горизонтальную прокрутку */
         scroll-snap-type: x mandatory; /* Включаем прокрутку с "прилипанием" */
         padding: 10px 0; /* Отступы сверху и снизу */
+        justify-content: flex-start;
     }
     .block {
         width: 228px; /* Ширина блока */
         height: 280px; /* Высота блока */
         flex: 0 0 auto; /* Блоки не будут сжиматься и будут занимать фиксированную ширину */
         margin: 0 10px; /* Отступы между блоками */
-        scroll-snap-align: start; /* Прокрутка будет "прилипать" к началу блока */
+        scroll-snap-align: start            ; /* Прокрутка будет "прилипать" к началу блока */
         transition: transform 0.3s ease, opacity 0.3s ease; /* Плавный переход для анимации */
         opacity: 1; /* Устанавливаем непрозрачность в 1 */
     }
@@ -1132,7 +1133,7 @@ footer {
         margin-top: 6px;     
     } 
     .strelki { 
-        display: none; 
+        display: none; /* Скрываем стрелки */
     } 
     .reviews-container { 
         margin-bottom: 30px; 
@@ -1161,7 +1162,7 @@ footer {
     } 
     .review { 
         justify-content: center; 
-    } 
+    }
     .container-6 { 
         position: relative; /* Относительное позиционирование для дочерних элементов */ 
         width: 100%; /* Занимает всю ширину экрана */ 
