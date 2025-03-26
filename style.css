@@ -338,7 +338,7 @@ body {
 } 
 .service-icon { 
     max-width: 60px; 
-    height: 23px; 
+
     margin-right: 15px; 
 } 
 .service-block h5 { 
@@ -1302,7 +1302,7 @@ footer {
         padding: 0 0 0 20px;
     }
     .popup-menu {
-        width: 320px;
+        width: 180px;
     }
         
 
@@ -1318,16 +1318,25 @@ footer {
 
 
     .service-block1, .service-block2, .service-block3 {
-        width: 150px;
+        width: 200px;
         height: 5px;
         margin: 5px;
+        display: flex;
+        align-items: center; /* Вертикальное выравнивание по центру */
+        margin: 5px 0; /* Отступы между блоками */
     }
     .service-icon img {
         width: 15px;
         height: 15px;
 
     }
-
+    .service-icon {
+        margin-right: 15px; /* Отступ между иконкой и текстом */
+    }
+    h5 {
+        flex: 1; /* Позволяет заголовку занимать оставшееся пространство */
+        text-align: left; /* Выравнивание текста по левому краю */
+    }
 
 
 
