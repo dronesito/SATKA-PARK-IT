@@ -6,8 +6,22 @@
     <title>Парк ИТ-Сатка</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png">
 </head>
 <style>
+    .dark-theme .container-1-1,
+    .dark-theme .container-2-1  {
+        background-color: #1e1e1e; /* Темный фон для контейнера */
+}  
+    .dark-theme .text-block {
+        background-color: #383838;
+    }
+    .dark-theme .text-block:hover {
+    background-color: #3a3a3a;
+    box-shadow: 0 7px 5px rgba(0, 132, 255, 0.541); /* Улучшенная тень */
+    transition: box-shadow 1s
+
+}
     .container-1-1 {
     position: relative; /* Относительное позиционирование для дочерних элементов */
     width: 100%; /* Занимает всю ширину экрана */
@@ -42,6 +56,12 @@
     background: #F3F3F3;
     border-radius: 5px; /* Скругление углов */
     text-align: center;
+}
+.text-block:hover {
+    background-color: #EBEBEB;
+    box-shadow: 0 7px 5px rgba(41, 38, 56, 0.541); /* Улучшенная тень */
+    transition: box-shadow 1s
+
 }
 .title {
     height: 660px;
@@ -89,6 +109,14 @@
     z-index: 1001; /* Чтобы изображение было поверх меню */
     width: 40px; /* Установите ширину изображения */
     height: auto; /* Высота будет пропорциональной */
+}
+
+.text-container a {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: inherit; /* Унаследуем цвет от родительского элемента */
+}
+.text-container a:hover {
+    color: #007BFF; /* Цвет ссылки при наведении */
 }
 
 
@@ -201,6 +229,15 @@
         }
     }
     @media (max-width: 430px) {
+        .popup-menu {
+        width: 180px;
+    }
+        .title {
+            width: auto;
+        }
+        .container-2-1 {
+            width: auto;
+        }
         .close-button {
         margin: 0;
         position: revert;
@@ -230,6 +267,7 @@
                     <li><a href="4about.html">Приложение</a></li>
                 </ul>
             </nav>
+            <button id="theme-toggle" class="theme-toggle"><img src="img/dark-mode_12657245.png" alt=""></button>
             <img src="img/open.png" class="open-popup" onclick="toggleMenu()" alt="Меню" />
         </header>
         <div id="popup-menu" class="popup-menu">
@@ -252,19 +290,22 @@
     <main>
         <main>
 
-            <div class="container-2-1">
+    <div class="container-2-1">
                 <div class="image-container">
                     <img src="img/Group 1000004191.png" alt="">
                 </div>
                 <div class="text-container">
                     <div class="text-block">
-                        <h3>Программное обеспечения для работы с ВТТН - VTTN.Mobile</h3>
+                        <a href="http://app.magnezius.ru/com.parkits.mobilevttn.apk" download>
+                            <h3>Программное обеспечения для работы с ВТТН - VTTN.Mobile</h3>
+                        </a>
                     </div>
                     <div class="text-block">
-                        <h3>Программное обеспечение для работы КПП - KPP.Mobile</h3>
+                        <a href="http://app.magnezius.ru/com.parkits.mobilekpp.apk" download>
+                            <h3>Программное обеспечение для работы КПП - KPP.Mobile</h3>
+                        </a>
                     </div>
                 </div>
-            </div>
     </div>
     </main>
     <div class="knopka">
@@ -272,8 +313,9 @@
         </div>
     <footer>
         <div class="logo-container2">
-            <div class="logo2"><img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt=""></div>
-            <h1>Парк ИТ-Сатка</h1>
+            <div class="logo2"><img src="img/5dce73faa8c4104bb6e90f80_LOGO_11120copy2-p-500.png" alt="">
+                <h1>Парк ИТ-Сатка</h1> 
+            </div> 
             <nav class="navigation2">
                 <ul>
                     <li><a href="index.html">Главная</a></li>
