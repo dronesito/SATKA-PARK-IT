@@ -1235,10 +1235,12 @@ footer {
     input { 
         width: 168px; 
         font-size: 7px; 
+        border-bottom: 1px solid white; ;
     } 
     textarea { 
         width: 168px; 
-        font-size: 7px; 
+        font-size: 7px;
+        border-bottom: 1px solid white; ; 
     } 
     .submit-button { 
         font-size: 8px; 
