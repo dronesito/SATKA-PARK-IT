@@ -937,7 +937,7 @@ footer {
         background-color: #ffffff; /* Белый фон */
         box-shadow: 0 0 15px rgb(0, 132, 255);
         position: absolute; /* Позиционирование относительно родителя */
-        top: 14%; /* Меню будет находиться под кнопкой */
+        top: 10%;
         right: 0; /* Выровнено по правому краю */
         display: none; /* Скрыто по умолчанию */
         transition: opacity 0.3s ease; /* Плавный переход */
