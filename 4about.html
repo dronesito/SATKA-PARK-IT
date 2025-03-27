@@ -32,6 +32,7 @@
     background-blend-mode: overlay;
 }
     .container-2-1 {
+        
     max-width: 1440px;
     margin: 0 auto;
     display: flex; /* Используем Flexbox для размещения элементов в строку */
@@ -80,15 +81,12 @@
     transition: right 0.3s ease; /* Плавный переход */
     z-index: 1000; /* Чтобы меню было поверх других элементов */
 }
-.popup-menu nav {
-    padding: 20px;
-}
 .popup-menu ul {
     list-style-type: none;
     padding: 0;
 }
 .popup-menu li {
-    margin: 27px 0;
+    margin: 20px 0;
 }
 .popup-menu a {
     text-decoration: none;
@@ -132,30 +130,46 @@
     @media (max-width: 480px) {
 
 
-        .open-popup {
+    .open-popup {
         display: block;
         top: 20px;
         right: 20px;
         border: none;
-        padding: 10px 15px;
+        padding: 10px;
         cursor: pointer;
         z-index: 1001; /* Чтобы кнопка была поверх меню */
+        transition: transform 0.3s ease; /* Плавный переход */
+        width: 30px; /* Уменьшаем размер кнопки открытия меню */
     }
 
     .popup-menu {
-        width: 200px; /* Уменьшаем ширину меню для мобильных устройств */
-        height: 300px; /* Устанавливаем высоту в 100% для полного экрана */
+        width: 45%; /* Меню занимает 80% ширины экрана */
+        max-width: 300px; /* Максимальная ширина меню */
+        max-height: 200px;
+        background-color: #ffffff; /* Белый фон */
+        box-shadow: 0 0 15px rgb(0, 132, 255);
+        position: absolute; /* Позиционирование относительно родителя */
+        top: 14%; /* Меню будет находиться под кнопкой */
+        right: 0; /* Выровнено по правому краю */
+        display: none; /* Скрыто по умолчанию */
+        transition: opacity 0.3s ease; /* Плавный переход */
+        overflow-y: auto; /* Прокрутка, если меню длинное */
+        padding: 20px; /* Отступы внутри меню */
+        z-index: 1000; /* Под кнопкой открытия меню */
     }
-    .close-button {
-        width: 25px; /* Уменьшаем размер кнопки закрытия */
+    .popup-menu nav ul {
+        list-style-type: none; /* Убираем маркеры у списка */
+        padding: 0; /* Убираем отступы */
     }
-    .open-popup {
-        width: 30px; /* Уменьшаем размер кнопки открытия меню */
+    .popup-menu nav ul li {
+        margin: 15px 0; /* Отступы между пунктами меню */
     }
     .popup-menu a {
-        font-size: 16px; /* Уменьшаем размер шрифта для мобильных устройств */
+        font-size: 18px; /* Увеличиваем размер шрифта для лучшей читабельности */
+        text-decoration: none; /* Убираем подчеркивание */
+        color: #333; /* Цвет текста */
+        transition: color 0.3s ease; /* Плавный переход цвета */
     }
-
 
 
 
@@ -210,7 +224,7 @@
             width: 75;
             height: 60px;
         }
-        .container-2-1 {
+        .container-2-1 {  
             flex-direction: column;
             align-items: center;
             padding: 0;
@@ -229,9 +243,6 @@
         }
     }
     @media (max-width: 430px) {
-        .popup-menu {
-        width: 245px;
-    }
         .title {
             width: auto;
         }
@@ -269,9 +280,11 @@
             </nav>
             <button id="theme-toggle" class="theme-toggle"><img src="img/dark-mode_12657245.png" alt=""></button>
             <img src="img/open.png" class="open-popup" onclick="toggleMenu()" alt="Меню" />
-        </header>
+
+        </header> <!-- Закрывающий тег header -->
+        
         <div id="popup-menu" class="popup-menu">
-            <img src="img/exit.png" class="close-button" onclick="toggleMenu()" alt="Закрыть" />
+          
             <nav>
                 <ul>
                     <li><a href="index.html">Главная</a></li>
@@ -282,6 +295,7 @@
                 </ul>
             </nav>
         </div>
+        <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
         <div class="title">
             <h2>Приложения
             </h2>
