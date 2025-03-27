@@ -904,6 +904,8 @@ footer {
     body { 
         font-size: 12px; /* Увеличиваем размер шрифта для удобства чтения */ 
         font-family: 'Exo 2', sans-serif; 
+        overflow-x: hidden;
+        height: 100vh; /* Устанавливаем высоту в 100% */
     } 
 
     .theme-toggle {
@@ -1315,6 +1317,9 @@ footer {
 
 
 @media (max-width: 430px) {
+    body {
+        overflow-x: hidden;
+    }
     .title {
         padding: 0 0 0 0 ;
     }
@@ -1434,6 +1439,9 @@ footer {
     }
 }
 @media (max-width: 325px) {
+    body {
+        overflow-x: hidden;
+    }
     .title h2 {
         font-size: 14px;
         width: 200px;
