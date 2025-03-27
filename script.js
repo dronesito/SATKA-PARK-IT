@@ -12,18 +12,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 function toggleMenu() {
     const menu = document.getElementById('popup-menu');
-    const openPopup = document.querySelector('.open-popup');
-    const currentRight = getComputedStyle(menu).right; // Получаем текущее значение right
-    if (currentRight === '0px') {
-        menu.style.right = '-480px'; // Скрываем меню
-        openPopup.style.display = 'block'; // Показываем кнопку открытия меню
-        document.body.classList.remove('menu-open'); // Включаем прокрутку
-    } else {
-        menu.style.right = '0px'; // Показываем меню
-        openPopup.style.display = 'none'; // Скрываем кнопку открытия меню
-        document.body.classList.add('menu-open'); // Отключаем прокрутку
-    }
+    const overlay = document.getElementById('overlay');
+    menu.classList.toggle('active');
+    overlay.style.display = menu.classList.contains('active') ? 'block' : 'none';
 }
+
 
 
 function scrollToTop() {
@@ -206,7 +199,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.getElementById('next-button').addEventListener('click', function() {
+    const container = document.getElementById('news-container');
+    container.scrollBy({
+        top: 0,
+        left: container.clientWidth, // Прокрутка на ширину контейнера
+        behavior: 'smooth' // Плавная прокрутка
+    });
+});
 
+
+function toggleDropdown() {
+    const dropdown = document.getElementById("theme-dropdown");
+    dropdown.style.display = dropdown.style.display === "none" || dropdown.style.display === "" ? "block" : "none";
+}
+function setTheme(theme) {
+    document.body.className = theme; // Устанавливаем класс для body
+    const dropdown = document.getElementById("theme-dropdown");
+    dropdown.style.display = "none"; // Скрываем выпадающее меню
+}
+// Пример изменения темы
+document.body.classList.add('light'); // По умолчанию светлая тема
 
 
 
