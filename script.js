@@ -11,11 +11,47 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
 
 function toggleMenu() {
-    const menu = document.getElementById('popup-menu');
+    const menu = document.querySelector('.popup-menu');
     const overlay = document.getElementById('overlay');
+    
+    // Переключаем класс active для меню
     menu.classList.toggle('active');
-    overlay.style.display = menu.classList.contains('active') ? 'block' : 'none';
+    
+    // Управляем отображением оверлея
+    if (menu.classList.contains('active')) {
+        overlay.style.display = 'block'; // Показываем оверлей
+        setTimeout(() => {
+            overlay.style.opacity = '1'; // Устанавливаем непрозрачность
+        }, 10); // Небольшая задержка для активации анимации
+    } else {
+        overlay.style.opacity = '0'; // Убираем непрозрачность
+        setTimeout(() => {
+            overlay.style.display = 'none'; // Скрываем оверлей после анимации
+        }, 300); // Ждем окончания анимации перед скрытием
+    }
 }
+
+// Закрытие меню при нажатии на оверлей
+document.getElementById('overlay').addEventListener('click', toggleMenu);
+
+// Обработчик для кнопки открытия/закрытия меню
+document.querySelector('.toggle-button').addEventListener('click', toggleMenu);
+
+
+
+
+
+
+const menu = document.querySelector('.popup-menu');
+const toggleButton = document.querySelector('.toggle-button'); // Кнопка для открытия/закрытия меню
+
+toggleButton.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
+
+
 
 
 
