@@ -82,10 +82,6 @@
     transition: right 0.3s ease; 
 }
 
-.popup-menu.active {
-    display: block; /* Показываем меню при добавлении класса active */
-    right: 0; /* Показываем меню */
-}
 
 
 .popup-menu::after {
@@ -165,6 +161,13 @@
         } 
     }
     @media (max-width: 480px) {
+
+
+        .popup-menu.active {
+    display: block; /* Показываем меню при добавлении класса active */
+    right: 0; /* Показываем меню */
+}
+
 
 
     .open-popup {
