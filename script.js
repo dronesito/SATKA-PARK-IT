@@ -13,10 +13,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function toggleMenu() {
     const menu = document.querySelector('.popup-menu');
     const overlay = document.getElementById('overlay');
-    
     // Переключаем класс active для меню
     menu.classList.toggle('active');
-    
     // Управляем отображением оверлея
     if (menu.classList.contains('active')) {
         overlay.style.display = 'block'; // Показываем оверлей
@@ -30,24 +28,12 @@ function toggleMenu() {
         }, 300); // Ждем окончания анимации перед скрытием
     }
 }
-
 // Закрытие меню при нажатии на оверлей
 document.getElementById('overlay').addEventListener('click', toggleMenu);
-
 // Обработчик для кнопки открытия/закрытия меню
-document.querySelector('.toggle-button').addEventListener('click', toggleMenu);
-
-
-
-
-
-
 const menu = document.querySelector('.popup-menu');
 const toggleButton = document.querySelector('.toggle-button'); // Кнопка для открытия/закрытия меню
-
-toggleButton.addEventListener('click', () => {
     menu.classList.toggle('active');
-});
 
 
 
@@ -104,6 +90,25 @@ document.querySelectorAll('.development-block').forEach(function(block) {
         block.classList.remove('hovered'); // Убираем класс при уходе курсора
     });
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
