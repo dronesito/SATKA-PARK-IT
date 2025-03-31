@@ -865,10 +865,6 @@ footer {
     transition: right 0.3s ease; 
 }
 
-.popup-menu.active {
-    display: block; /* Показываем меню при добавлении класса active */
-    right: 0; /* Показываем меню */
-}
 
 
 .popup-menu::after {
@@ -948,6 +944,11 @@ footer {
     .toggle-popup {
         display: block;
     }
+    .popup-menu.active {
+        display: block; /* Показываем меню при добавлении класса active */
+        right: 0; /* Показываем меню */
+    }
+    
 
 
     .menu-container {
