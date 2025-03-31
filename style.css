@@ -1140,6 +1140,7 @@ footer {
     } 
     .container-4 { 
         padding: 40px; 
+        border-radius: 0;
     } 
     .container-4 h4 { 
         font-size: 18px; 
@@ -1219,7 +1220,6 @@ footer {
         display: none; /* Скрываем стрелки */
     } 
     .reviews-container { 
-        margin-bottom: 30px; 
         padding: 0; 
     } 
     .reviews-container h4 { 
@@ -1378,6 +1378,7 @@ footer {
     }
     .content {
         align-items: center ;
+        gap: 20px;
     }
     .close-button {
         margin: 0;
@@ -1443,6 +1444,7 @@ footer {
         padding: 0;
         flex-direction: column;
         gap: 14px;
+        align-items: center;
     }
     .container-4 {
         padding: 20px;
