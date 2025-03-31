@@ -1030,6 +1030,7 @@ footer {
     
     
     .container-1 { 
+        overflow-x: hidden;
         position: relative; /* Относительное позиционирование для дочерних элементов */ 
         width: 100%; /* Занимает всю ширину экрана */ 
         height: 100vh; /* Занимает всю высоту экрана */ 
@@ -1246,6 +1247,7 @@ footer {
         justify-content: center; 
     }
     .container-6 { 
+        overflow-x: hidden;
         position: relative; /* Относительное позиционирование для дочерних элементов */ 
         width: 100%; /* Занимает всю ширину экрана */ 
         height: 300px; /* Занимает всю высоту экрана */ 
@@ -1359,7 +1361,8 @@ footer {
         padding: 0 0 0 0 ;
     }
     .container-2 {
-        width: 350px;
+        overflow-x: hidden; 
+        width: 100%;
     }
 
     .text-content {
