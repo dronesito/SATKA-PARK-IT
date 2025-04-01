@@ -13,8 +13,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 function toggleMenu() {
     const menu = document.querySelector('.popup-menu');
     const overlay = document.getElementById('overlay');
-    // Переключаем класс active для меню
+
+    // Переключаем класс active для меню и оверлея
     menu.classList.toggle('active');
+    overlay.classList.toggle('active'); // Добавляем управление классом для оверлея
+
     // Управляем отображением оверлея
     if (menu.classList.contains('active')) {
         overlay.style.display = 'block'; // Показываем оверлей
@@ -28,12 +31,8 @@ function toggleMenu() {
         }, 300); // Ждем окончания анимации перед скрытием
     }
 }
-// Закрытие меню при нажатии на оверлей
-document.getElementById('overlay').addEventListener('click', toggleMenu);
-// Обработчик для кнопки открытия/закрытия меню
-const menu = document.querySelector('.popup-menu');
-const toggleButton = document.querySelector('.toggle-button'); // Кнопка для открытия/закрытия меню
-    menu.classList.toggle('active');
+
+
 
 
 
