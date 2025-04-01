@@ -168,7 +168,9 @@
     right: 0; /* Показываем меню */
 }
 
-
+    .popup-menu.active {
+        height: 200px;
+    }
 
     .open-popup {
         display: block;
@@ -189,11 +191,10 @@
         background-color: #ffffff; /* Белый фон */
         box-shadow: 0 0 15px rgb(0, 132, 255);
         position: absolute; /* Позиционирование относительно родителя */
-        top: 70%; /* Меню будет находиться под кнопкой */
+
         right: 0; /* Выровнено по правому краю */
         display: none; /* Скрыто по умолчанию */
         transition: opacity 0.3s ease; /* Плавный переход */
-        overflow-y: auto; /* Прокрутка, если меню длинное */
         padding: 20px; /* Отступы внутри меню */
         z-index: 1000; /* Под кнопкой открытия меню */
     }
@@ -339,7 +340,6 @@
         </div>
     </div>
     <main>
-        <main>
 
     <div class="container-2-1">
                 <div class="image-container">
