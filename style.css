@@ -854,6 +854,7 @@ footer {
 
 
 .popup-menu {
+    display: none;
     position: relative; /* Убедитесь, что родительский элемент имеет относительное позиционирование */
     z-index: 1000; /* Устанавливаем z-index для меню */
     display: none; /* Скрыто по умолчанию */
